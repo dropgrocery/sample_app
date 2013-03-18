@@ -31,6 +31,7 @@ group :production do
 end
 
 group :development, :test do
+  gem 'taps'
   gem 'rspec-rails',      ">= 2.0.0.beta"
 end
 

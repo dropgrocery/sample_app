@@ -27,9 +27,10 @@ end
 
 
 #gem 'sqlite3', :group =>[:development, :test]
+gem 'pg', :group =>[:development, :test]
 group :production do
   gem 'thin'
-  gem 'pg','0.12.2'
+  gem 'pg'
 end
 
 group :development, :test do

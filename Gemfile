@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.9'
 gem 'bootstrap-sass','2.0.0'
+gem 'bcrypt-ruby'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -30,7 +31,7 @@ group :test do
 end
 
 
-#gem 'sqlite3', :group =>[:development, :test]
+gem 'sqlite3', :group =>[:development, :test]
 gem 'pg', :group =>[:development, :test]
 group :production do
   gem 'thin'
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'taps'
   gem 'rspec-rails',      ">= 2.0.0.beta"
   gem 'guard-rspec','0.5.5'
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 

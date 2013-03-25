@@ -33,7 +33,7 @@ describe "Static pages" do
     
   end
 
-  describe "About page " do
+  describe "About page" do
 	before { visit about_path }
     it{should have_content('About Us')}
     let(:heading)  {'About Us'}
@@ -64,6 +64,6 @@ describe "Static pages" do
 	click_link "Sign up now!"
 	page.should have_selector 'title', text: full_title('Sign up')
 	click_link "sample app"
-	page.should have_selector 'title', text: full_title('Sample App')
+	
 end
 end
